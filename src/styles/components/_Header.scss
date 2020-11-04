@@ -1,0 +1,60 @@
+.header {
+	font-family: $Staatliches;
+	background-color: $header-bg-color;
+	color: $header-text-color;
+	min-width: 100vw;
+	width: 100%;
+	margin-bottom: $spacing-m;
+}
+
+.header__nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: $spacing-s;
+}
+
+.header__navlinks {
+	display: none;
+}
+
+.header__navlink {
+	text-decoration: none;
+	font-size: $h5-font-size;
+	margin: 0 $spacing-s 0 $spacing-s;
+	color: $header-text-color;
+}
+
+.header__navlink__brand {
+	font-size: $h3-font-size;
+}
+
+.header__navlink__active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.menu-button {
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.menu-button__icon {
+	fill: $header-text-color;
+}
+
+@media (min-width: $page-width) {
+	.header__nav {
+		width: $page-width;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header__navlinks {
+		display: block;
+	}
+	.menu-button {
+		display: none;
+	}
+}

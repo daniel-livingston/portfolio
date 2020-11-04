@@ -1,0 +1,58 @@
+.contact-form-large {
+	width: 100%;
+}
+
+.contact-form__section {
+	flex-grow: 0.48;
+	margin: $spacing-s 0;
+}
+
+.contact-form__section label {
+	display: block;
+	font-family: $Staatliches;
+	font-size: $h4-font-size;
+}
+
+.contact-form__error {
+	display: inline;
+	color: $error-text-color;
+	margin-left: $spacing-s;
+	font-size: $h6-font-size;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: $spacing-s;
+	border-radius: 0.5rem;
+	border: 2px solid lighten($header-bg-color, 10%);
+	font-size: $h6-font-size;
+}
+
+.contact-form__section input {
+	width: 100%;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.contact-form button {
+	font-family: $Staatliches;
+	font-size: $h5-font-size;
+	padding: $spacing-s;
+	border-radius: 0.5rem;
+}
+
+.contact-form button:hover {
+	background-color: darken($header-bg-color, 10%);
+	color: darken($header-text-color, 10%);
+}
+
+@media (min-width: $page-width) {
+	.contact-form__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

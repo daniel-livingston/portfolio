@@ -1,0 +1,12 @@
+button {
+	background-color: $header-bg-color;
+	border: none;
+	color: $header-text-color;
+	cursor: pointer;
+	font-family: $Staatliches;
+	outline: none;
+}
+
+button:disabled {
+	cursor: default;
+}

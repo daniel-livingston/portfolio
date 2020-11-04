@@ -1,0 +1,53 @@
+.footer {
+	background: $header-bg-color;
+	color: $header-text-color;
+	font-family: $Staatliches;
+	padding: $spacing-l 0;
+	margin-top: $spacing-m;
+}
+
+.footer__nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer__navlinks {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__navlink {
+	text-decoration: none;
+	font-size: $h6-font-size;
+	color: $header-text-color;
+	padding: $spacing-xs;
+}
+
+.footer__navlink__active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.footer__navlink__brand {
+	font-size: $h5-font-size;
+}
+
+.social-icons {
+	height: 16px;
+	width: auto;
+	filter: brightness(0) invert(1);
+	margin: $spacing-xs;
+}
+
+@media (min-width: $page-width) {
+	.footer__nav {
+		width: $page-width;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.social-icons {
+		height: 32px;
+	}
+}
