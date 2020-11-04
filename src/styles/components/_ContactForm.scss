@@ -9,8 +9,9 @@
 
 .contact-form__section label {
 	display: block;
-	font-family: $Staatliches;
-	font-size: $h4-font-size;
+	font-family: $header-font-family;
+	font-size: $h5-font-size;
+	padding: $spacing-s;
 }
 
 .contact-form__error {
@@ -38,7 +39,7 @@
 }
 
 .contact-form button {
-	font-family: $Staatliches;
+	font-family: $header-font-family;
 	font-size: $h5-font-size;
 	padding: $spacing-s;
 	border-radius: 0.5rem;

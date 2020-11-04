@@ -12,10 +12,11 @@
 
 .side-menu .navlink {
 	color: $header-text-color;
-	font-family: $Staatliches;
+	font-family: $header-font-family;
 	font-size: $h5-font-size;
 	text-decoration: none;
 	width: 100%;
+	padding: $spacing-s;
 }
 
 .side-menu .navlink__active {

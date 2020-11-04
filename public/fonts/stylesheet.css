@@ -22,3 +22,14 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: "Komika";
+	src: url("KomikaTitle-Paint.eot");
+	src: url("KomikaTitle-Paint.eot?#iefix") format("embedded-opentype"),
+		url("KomikaTitle-Paint.woff2") format("woff2"), url("KomikaTitle-Paint.woff") format("woff"),
+		url("KomikaTitle-Paint.ttf") format("truetype"),
+		url("KomikaTitle-Paint.svg#KomikaTitle-Paint") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
