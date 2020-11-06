@@ -1,8 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./Header";
+import Home from "./Home";
+import NotFound from "./NotFound";
+import Projects from "./Projects";
 import SideMenu from "./SideMenu";
 
 export default class App extends React.Component {
@@ -47,19 +51,19 @@ export default class App extends React.Component {
 				<div id='main-content'>
 					<Switch>
 						<Route path='/' exact>
-							<div>Home</div>
+							<Home />
 						</Route>
 						<Route path='/about'>
-							<div>About</div>
+							<About />
 						</Route>
 						<Route path='/projects'>
-							<div>Projects</div>
+							<Projects />
 						</Route>
 						<Route path='/contact'>
 							<Contact />
 						</Route>
 						<Route>
-							<div>404</div>
+							<NotFound />
 						</Route>
 					</Switch>
 				</div>
