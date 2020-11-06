@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SideMenu /> renders snapshot correctly with 3 NavLink components 1`] = `
+<div
+  className="side-menu"
+  id="side-menu"
+>
+  <NavLink
+    activeClassName="navlink__active"
+    className="navlink"
+    onClick={[Function]}
+    to="/about"
+  >
+    About
+  </NavLink>
+  <NavLink
+    activeClassName="navlink__active"
+    className="navlink"
+    onClick={[Function]}
+    to="/projects"
+  >
+    Projects
+  </NavLink>
+  <NavLink
+    activeClassName="navlink__active"
+    className="navlink"
+    onClick={[Function]}
+    to="/contact"
+  >
+    Contact
+  </NavLink>
+</div>
+`;

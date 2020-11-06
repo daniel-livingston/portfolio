@@ -11,7 +11,7 @@ const SideMenu = (props) => {
 		props.closeMenu();
 	};
 	return (
-		<div id='side-menu' class='side-menu'>
+		<div id='side-menu' className='side-menu'>
 			<NavLink
 				onClick={onClick}
 				className='navlink'
