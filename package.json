@@ -10,7 +10,7 @@
 		"build:dev": "webpack --config=webpack.production.config.js --watch --progress",
 		"build:serve": "webpack serve --config=webpack.development.config.js",
 		"dev": "concurrently \"npm run build:dev\" \"npm run start:dev\"",
-		"test": "jest --config=jest.config.json --runInBand"
+		"test": "jest --config=jest.config.json --runInBand --detectOpenHandles"
 	},
 	"author": "Daniel Livingston",
 	"license": "ISC",
