@@ -11,8 +11,10 @@ export default class ContactForm extends React.Component {
 		showEmailError: false,
 		showSubjectError: false,
 		showMessageError: false,
+		sentSuccessfully: false,
+		errorSending: false,
 	};
-	onSubmit = (e) => {
+	onSubmit = async (e) => {
 		e.preventDefault();
 
 		const isValidName = !!e.target.name.value;
@@ -21,7 +23,32 @@ export default class ContactForm extends React.Component {
 		const isValidMessage = !!e.target.message.value;
 
 		if (isValidName && isValidEmail && isValidSubject && isValidMessage) {
-			console.log("Submitted!");
+			const response = await fetch("/contact", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					name: e.target.name.value,
+					email: e.target.email.value,
+					subject: e.target.subject.value,
+					message: e.target.message.value,
+				}),
+			});
+
+			if (response.status !== 200) {
+				const data = await response.json();
+				// Show that it couldn't be sent
+				return console.log(data);
+			}
+
+			this.setState(() => ({
+				name: "",
+				email: "",
+				subject: "",
+				message: "",
+				sentSuccessfully: true,
+			}));
 		} else {
 			this.showErrors(isValidName, isValidEmail, isValidSubject, isValidMessage);
 		}
@@ -166,6 +193,14 @@ export default class ContactForm extends React.Component {
 					/>
 				</div>
 				<button>Submit</button>
+				{this.state.sentSuccessfully && (
+					<div className='contact-form__success'>Your message was sent successfully!</div>
+				)}
+				{this.state.errorSending && (
+					<div className='contact-form__error'>
+						Could not send message at this time. Try again later.
+					</div>
+				)}
 			</form>
 		);
 	}

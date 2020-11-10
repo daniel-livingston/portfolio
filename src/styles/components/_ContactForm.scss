@@ -14,11 +14,16 @@
 	padding: $spacing-s;
 }
 
-.contact-form__error {
+.contact-form__error,
+.contact-form__success {
 	display: inline;
 	color: $error-text-color;
 	margin-left: $spacing-s;
 	font-size: $h6-font-size;
+}
+
+.contact-form__success {
+	color: $main-text-secondary;
 }
 
 .contact-form input,
@@ -43,6 +48,7 @@
 	font-size: $h5-font-size;
 	padding: $spacing-s;
 	border-radius: 0.5rem;
+	float: right;
 }
 
 .contact-form button:hover {

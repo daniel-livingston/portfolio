@@ -16,6 +16,28 @@ const Home = () => {
 			</div>
 			<div className='home__attribute container'>
 				<div className='wrapper'>
+					<h2 className='home__attribute__title attribute__one'>Front End Development</h2>
+					<p className='home__attribute__description'>
+						I have solid fundamentals, with in-depth knowledge of HTML5 and CSS3. I also
+						have knowledge of front end frameworks like React (this website is built
+						completely with React). I also have experience utilizing many of the
+						libraries that play well with React, like Redux, React-Router and Jest.
+					</p>
+				</div>
+			</div>
+
+			<div className='home__attribute container'>
+				<div className='wrapper'>
+					<h2 className='home__attribute__title attribute__two'>Back End Development</h2>
+					<p className='home__attribute__description'>
+						I have a solid knowledge of the fundamentals of back end development. I have
+						experience building out servers using Express, Passport, and MongoDB, as
+						well as designing and building HTTP-based APIs.
+					</p>
+				</div>
+			</div>
+			<div className='home__attribute container'>
+				<div className='wrapper'>
 					<h2 className='home__attribute__title attribute__one'>
 						Teachable and Inquisitive
 					</h2>

@@ -1,10 +1,9 @@
-// Experimental
-
 .home__main-attribute {
 	padding: $spacing-m 0;
 }
 
 .home__main-attribute__header {
+	text-align: center;
 	font-weight: $header-font-weight;
 	font-size: $h2-font-size;
 }
@@ -15,7 +14,6 @@
 
 .home__attribute__title {
 	font-size: $h3-font-size;
-	padding-left: $spacing-s;
 	font-weight: $header-font-weight;
 }
 
@@ -25,20 +23,15 @@
 	line-height: $text-font-size-m;
 }
 
-.attribute__left {
-	text-align: left;
-}
-
-.attribute__right {
-	text-align: right;
-}
-
 .attribute__one {
 	color: $main-text-tertiary;
+	padding-left: $spacing-s;
 	border-left: 5px solid $main-text-tertiary;
 }
 
 .attribute__two {
 	color: $main-text-fourth;
-	border-left: 5px solid $main-text-fourth;
+	text-align: right;
+	padding-right: $spacing-s;
+	border-right: 5px solid $main-text-fourth;
 }

@@ -1,6 +1,6 @@
 .side-menu {
-	background-color: $header-bg-color;
-	border: 1px solid lighten($header-bg-color, 10%);
+	background-color: $main-bg-color;
+	border: 1px solid darken($main-bg-color, 10%);
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -8,10 +8,11 @@
 	right: 0;
 	padding: $spacing-m;
 	border-radius: 0.5rem;
+	box-shadow: 0 0 5px #555;
 }
 
 .side-menu .navlink {
-	color: $header-text-color;
+	color: $main-text-color;
 	font-family: $header-font-family;
 	font-size: $h5-font-size;
 	text-decoration: none;
