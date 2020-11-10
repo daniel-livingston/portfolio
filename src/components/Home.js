@@ -9,33 +9,57 @@ const Home = () => {
 				<div className='wrapper'>
 					<h2 className='home__main-attribute__header'>
 						I'm a full stack web developer with experience building applications using
-						Node.js and React.
+						<span className='text-accent'> Node.js </span>and{" "}
+						<span className='text-accent'> React </span>.
 					</h2>
 				</div>
 			</div>
 			<div className='home__attribute container'>
 				<div className='wrapper'>
-					<h2 className='home__attribute__title attribute__red'>
+					<h2 className='home__attribute__title attribute__one'>
 						Teachable and Inquisitive
 					</h2>
 					<p className='home__attribute__description'>
 						I have a thirst for knowledge. In the months since graduating with a
 						master's in computer science focusing on data science, I've used every
-						resource I can to teach myself web development, and I will probably never
-						stop learning.
+						resource I can to teach myself web development. I'm still learning, and I
+						will probably never stop.
 					</p>
 				</div>
 			</div>
 
 			<div className='home__attribute container'>
 				<div className='wrapper'>
-					<h2 className='home__attribute__title attribute__blue'>
+					<h2 className='home__attribute__title attribute__two'>
 						Communicative and Team-oriented
 					</h2>
 					<p className='home__attribute__description'>
 						I highly value the ability to work well with other people. I have tons of
 						experience leading and being led, and I believe, in life, there is no
 						greater skill than being able to cooperate with others.
+					</p>
+				</div>
+			</div>
+
+			<div className='home__attribute container'>
+				<div className='wrapper'>
+					<h2 className='home__attribute__title attribute__one'>Self-starter</h2>
+					<p className='home__attribute__description'>
+						Proactivity is important in all facets of life. Often people will let
+						difficult situations stop them from progressing. I try my best to continue
+						pushing through that difficulty and succeed anyway.
+					</p>
+				</div>
+			</div>
+
+			<div className='home__attribute container'>
+				<div className='wrapper'>
+					<h2 className='home__attribute__title attribute__two'>Education</h2>
+					<p className='home__attribute__description'>
+						I graduated from Florida Atlantic University in 2020 with a{" "}
+						<span className='text-accent'> master's in computer science</span>, and
+						before that with a{" "}
+						<span className='text-accent'> bachelor's in mathematics</span>.
 					</p>
 				</div>
 			</div>

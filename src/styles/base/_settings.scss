@@ -18,17 +18,22 @@ $h6-font-size: 1.6rem;
 $text-font-size-m: 2.4rem;
 $text-font-size-s: 1.8rem;
 
+$header-font-weight: 300;
+$text-font-weight: 500;
+
 // Theming
 
 // Colors
 $main-text-color: #000;
+$main-text-secondary: rgb(102, 183, 207);
+$main-text-tertiary: rgb(255, 215, 121);
+$main-text-fourth: rgb(255, 139, 121);
 $main-bg-color: white;
 $header-text-color: #eee;
 $header-bg-color: #000;
 $header-secondary-bg-color: rgb(64, 98, 161);
-$header-active-color: rgb(255, 97, 70);
+$header-active-color: $main-text-secondary;
 $error-text-color: red;
-$attribute-color-red: rgb(138, 0, 0);
 
 // Sizing
 
@@ -42,6 +47,16 @@ $spacing-m: 1.6rem;
 $spacing-l: 2.4rem;
 
 // Effects
-$grid-line: transparentize($main-text-color, 0.9);
-$grid-background-image: repeating-linear-gradient($grid-line, transparent 1px 31px, $grid-line 32px),
-	repeating-linear-gradient(to right, $grid-line, transparent 1px 31px, $grid-line 32px);
+$grid-line: transparentize($main-text-color, 0.93);
+$grid-square-width: 40px;
+$grid-background-image: repeating-linear-gradient(
+		$grid-line,
+		transparent 1px $grid-square-width - 1,
+		$grid-line $grid-square-width
+	),
+	repeating-linear-gradient(
+		to right,
+		$grid-line,
+		transparent 1px $grid-square-width - 1,
+		$grid-line $grid-square-width
+	);
