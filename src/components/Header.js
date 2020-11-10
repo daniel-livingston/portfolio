@@ -25,11 +25,7 @@ const Header = (props) => {
 		<header id='header' className='header'>
 			<div className='header__brand'>
 				<div className='header__brand__wrapper'>
-					<Link
-						onClick={onLinkClick}
-						className='header__brand__title header__navlink'
-						to='/'
-					>
+					<Link onClick={onLinkClick} className='header__brand__title' to='/'>
 						Daniel Livingston
 					</Link>
 					<div className='header__brand__description'>Web Developer</div>

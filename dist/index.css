@@ -390,9 +390,9 @@ h6 {
 }
 
 button {
-  background-color: #000;
+  background-color: #ffd779;
   border: none;
-  color: #eee;
+  color: white;
   cursor: pointer;
   font-family: "Staatliches", Arial, sans-serif;
   outline: none;
@@ -434,9 +434,9 @@ button:disabled {
 }
 #content h1 {
   font-size: 3.6rem;
-  padding-bottom: 1rem;
+  padding-left: 1rem;
   color: #66b7cf;
-  border-bottom: 5px solid #66b7cf;
+  border-left: 5px solid #66b7cf;
 }
 
 .contact-form-large {
@@ -457,7 +457,7 @@ button:disabled {
 
 .contact-form__error {
   display: inline;
-  color: red;
+  color: #ff8b79;
   margin-left: 1rem;
   font-size: 1.6rem;
 }
@@ -499,8 +499,8 @@ button:disabled {
   }
 }
 .footer {
-  background: #000;
-  color: #eee;
+  background: #daeef4;
+  color: #000;
   font-family: "Staatliches", Arial, sans-serif;
   padding: 2.4rem 0;
   margin-top: 1.6rem;
@@ -521,7 +521,7 @@ button:disabled {
 .footer__navlink {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #eee;
+  color: #000;
   padding: 0.5rem;
 }
 
@@ -532,7 +532,7 @@ button:disabled {
 .social-icons {
   height: 16px;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
   margin: 0.5rem;
 }
 
@@ -549,10 +549,9 @@ button:disabled {
 }
 .header {
   font-family: "Staatliches", Arial, sans-serif;
-  color: #eee;
+  color: #000;
   min-width: 100vw;
   width: 100%;
-  background-image: linear-gradient(to right, #000, #1a1a1a 50%, #000 100%);
 }
 
 .header__brand {
@@ -569,6 +568,7 @@ button:disabled {
 }
 
 .header__brand__title {
+  color: #000;
   font-size: 4.8rem !important;
   text-align: center;
 }
@@ -585,11 +585,15 @@ button:disabled {
   display: none;
 }
 
-.header__navlink {
+.header__navlink,
+.header__brand__title {
   text-decoration: none;
   font-size: 2rem;
   padding: 0 1.6rem;
-  color: #eee;
+}
+
+.header__navlink {
+  color: #000;
 }
 
 .header__navlink__brand {
@@ -610,7 +614,7 @@ button:disabled {
 }
 
 .menu-button__icon {
-  fill: #eee;
+  fill: #000;
 }
 
 @media (min-width: 768px) {
@@ -624,12 +628,9 @@ button:disabled {
     width: 768px;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .header__navlinks {
-    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .menu-button {

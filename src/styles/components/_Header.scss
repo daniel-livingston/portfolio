@@ -1,14 +1,8 @@
 .header {
 	font-family: $header-font-family;
-	color: $header-text-color;
+	color: $main-text-color;
 	min-width: 100vw;
 	width: 100%;
-	background-image: linear-gradient(
-		to right,
-		$header-bg-color,
-		lighten($header-bg-color, 10%) 50%,
-		#000 100%
-	);
 }
 
 .header__brand {
@@ -25,6 +19,7 @@
 }
 
 .header__brand__title {
+	color: $main-text-color;
 	font-size: $h1-font-size !important;
 	text-align: center;
 }
@@ -41,11 +36,15 @@
 	display: none;
 }
 
-.header__navlink {
+.header__navlink,
+.header__brand__title {
 	text-decoration: none;
 	font-size: $h5-font-size;
 	padding: 0 $spacing-m;
-	color: $header-text-color;
+}
+
+.header__navlink {
+	color: $main-text-color;
 }
 
 .header__navlink__brand {
@@ -66,7 +65,7 @@
 }
 
 .menu-button__icon {
-	fill: $header-text-color;
+	fill: $main-text-color;
 }
 
 @media (min-width: $page-width) {
@@ -79,11 +78,9 @@
 		width: $page-width;
 		margin-right: auto;
 		margin-left: auto;
-	}
-	.header__navlinks {
-		width: 100%;
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 	}
 	.menu-button {
 		display: none;

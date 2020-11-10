@@ -33,7 +33,12 @@ $header-text-color: #eee;
 $header-bg-color: #000;
 $header-secondary-bg-color: rgb(64, 98, 161);
 $header-active-color: $main-text-secondary;
-$error-text-color: red;
+$error-text-color: $main-text-fourth;
+$footer-bg-color: lighten($main-text-secondary, 30%);
+$footer-text-color: $main-text-color;
+$footer-text-secondary: $main-text-secondary;
+$button-color: $main-text-tertiary;
+$button-text-color: white;
 
 // Sizing
 
