@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const propTypes = {
@@ -23,20 +23,25 @@ const Header = (props) => {
 
 	return (
 		<header id='header' className='header'>
+			<div className='header__brand'>
+				<div className='header__brand__wrapper'>
+					<Link
+						onClick={onLinkClick}
+						className='header__brand__title header__navlink'
+						to='/'
+					>
+						Daniel Livingston
+					</Link>
+					<div className='header__brand__description'>Web Developer</div>
+				</div>
+			</div>
 			<nav className='header__nav'>
-				<NavLink
-					onClick={onLinkClick}
-					className='header__navlink header__navlink__brand'
-					to='/'
-					exact
-				>
-					Daniel Livingston
-				</NavLink>
-				<div class='header__navlinks'>
+				<div className='header__navlinks'>
 					<NavLink
 						className='header__navlink'
-						to='/about'
+						to='/'
 						activeClassName='header__navlink__active'
+						exact
 					>
 						About
 					</NavLink>
@@ -55,14 +60,14 @@ const Header = (props) => {
 						Contact
 					</NavLink>
 				</div>
-				<button className='menu-button' onClick={onMenuClick}>
-					<svg className='menu-button__icon' viewBox='0 0 100 80' width='24' height='24'>
-						<rect width='100' height='20'></rect>
-						<rect y='30' width='100' height='20'></rect>
-						<rect y='60' width='100' height='20'></rect>
-					</svg>
-				</button>
 			</nav>
+			<button className='menu-button' onClick={onMenuClick}>
+				<svg className='menu-button__icon' viewBox='0 0 100 80' width='24' height='24'>
+					<rect width='100' height='20'></rect>
+					<rect y='30' width='100' height='20'></rect>
+					<rect y='60' width='100' height='20'></rect>
+				</svg>
+			</button>
 		</header>
 	);
 };

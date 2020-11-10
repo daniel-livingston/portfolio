@@ -12,12 +12,7 @@ const SideMenu = (props) => {
 	};
 	return (
 		<div id='side-menu' className='side-menu'>
-			<NavLink
-				onClick={onClick}
-				className='navlink'
-				to='/about'
-				activeClassName='navlink__active'
-			>
+			<NavLink onClick={onClick} className='navlink' to='/' activeClassName='navlink__active'>
 				About
 			</NavLink>
 			<NavLink

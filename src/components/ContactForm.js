@@ -97,7 +97,7 @@ export default class ContactForm extends React.Component {
 			<form className='contact-form contact-form-large' onSubmit={this.onSubmit}>
 				<div className='contact-form__row'>
 					<div className='contact-form__section'>
-						<label for='name'>
+						<label htmlFor='name'>
 							Name
 							{this.state.showNameError && (
 								<p className='contact-form__error'>Please include your name.</p>
@@ -114,7 +114,7 @@ export default class ContactForm extends React.Component {
 						/>
 					</div>
 					<div className='contact-form__section'>
-						<label for='email'>
+						<label htmlFor='email'>
 							Email
 							{this.state.showEmailError && (
 								<p className='contact-form__error'>
@@ -133,7 +133,7 @@ export default class ContactForm extends React.Component {
 				</div>
 
 				<div className='contact-form__section'>
-					<label for='subject'>
+					<label htmlFor='subject'>
 						Subject
 						{this.state.showSubjectError && (
 							<p className='contact-form__error'>
@@ -151,7 +151,7 @@ export default class ContactForm extends React.Component {
 					/>
 				</div>
 				<div className='contact-form__section'>
-					<label for='message'>
+					<label htmlFor='message'>
 						Message
 						{this.state.showMessageError && (
 							<p className='contact-form__error'>Please include your message.</p>

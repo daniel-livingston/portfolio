@@ -53,9 +53,6 @@ export default class App extends React.Component {
 						<Route path='/' exact>
 							<Home />
 						</Route>
-						<Route path='/about'>
-							<About />
-						</Route>
 						<Route path='/projects'>
 							<Projects />
 						</Route>

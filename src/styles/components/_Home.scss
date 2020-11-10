@@ -1,0 +1,35 @@
+// Experimental
+
+.home__main-attribute {
+	padding: $spacing-m 0;
+}
+
+.home__main-attribute__header {
+	font-size: $h2-font-size;
+}
+
+.home__attribute {
+	padding: $spacing-m 0;
+}
+
+.home__attribute__title {
+	font-size: $h3-font-size;
+	padding-left: $spacing-s;
+}
+
+.home__attribute__description {
+	font-weight: 600;
+	font-size: $text-font-size-s;
+	line-height: $text-font-size-m;
+}
+
+.attribute__red {
+	color: $attribute-color-red;
+	border-left: 5px solid $attribute-color-red;
+}
+
+$attribute-color-blue: rgb(0, 0, 128);
+.attribute__blue {
+	color: $attribute-color-blue;
+	border-left: 5px solid $attribute-color-blue;
+}

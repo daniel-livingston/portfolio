@@ -20,6 +20,5 @@
 }
 
 .side-menu .navlink__active {
-	font-weight: bold;
-	text-decoration: underline;
+	color: $header-active-color;
 }

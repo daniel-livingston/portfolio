@@ -7,7 +7,7 @@
 		"start": "node server/index",
 		"start:dev": "nodemon server/index",
 		"build": "webpack --config=webpack.production.config.js",
-		"build:dev": "webpack --config=webpack.production.config.js --watch --progress",
+		"build:dev": "webpack --config=webpack.development.config.js --watch --progress",
 		"build:serve": "webpack serve --config=webpack.development.config.js",
 		"dev": "concurrently \"npm run build:dev\" \"npm run start:dev\"",
 		"test": "jest --config=jest.config.json --runInBand --detectOpenHandles"

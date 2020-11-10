@@ -1,0 +1,10 @@
+#content {
+	margin-top: $spacing-m;
+
+	h1 {
+		font-size: $h2-font-size;
+		padding-bottom: $spacing-s;
+		color: $attribute-color-red;
+		border-bottom: 5px solid $attribute-color-red;
+	}
+}

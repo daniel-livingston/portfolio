@@ -17,33 +17,18 @@ const Footer = (props) => (
 			>
 				Daniel Livingston
 			</NavLink>
-			<div class='footer__navlinks'>
-				<NavLink
-					className='footer__navlink'
-					to='/about'
-					onClick={props.closeMenu}
-					activeClassName='footer__navlink__active'
-				>
+			<div className='footer__navlinks'>
+				<NavLink className='footer__navlink' to='/' onClick={props.closeMenu}>
 					About
 				</NavLink>
-				<NavLink
-					className='footer__navlink'
-					to='/projects'
-					onClick={props.closeMenu}
-					activeClassName='footer__navlink__active'
-				>
+				<NavLink className='footer__navlink' to='/projects' onClick={props.closeMenu}>
 					Projects
 				</NavLink>
-				<NavLink
-					className='footer__navlink'
-					to='/contact'
-					onClick={props.closeMenu}
-					activeClassName='footer__navlink__active'
-				>
+				<NavLink className='footer__navlink' to='/contact' onClick={props.closeMenu}>
 					Contact
 				</NavLink>
 			</div>
-			<div class='footer__social-links'>
+			<div className='footer__social-links'>
 				<a href='https://github.com/daniel-livingston' target='_blank'>
 					<img
 						className='social-icons'
