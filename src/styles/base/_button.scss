@@ -1,12 +1,21 @@
-button {
+.button {
 	background-color: $button-color;
-	border: none;
+	border: darken($button-color, 10%);
 	color: $button-text-color;
 	cursor: pointer;
-	font-family: $Staatliches;
 	outline: none;
+	font-family: $header-font-family;
+	font-size: $h5-font-size;
+	padding: $spacing-s;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	margin-left: $spacing-s;
 }
 
-button:disabled {
+.button:hover {
+	background-color: darken($button-color, 10%);
+}
+
+.button:disabled {
 	cursor: default;
 }

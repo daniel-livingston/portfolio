@@ -44,16 +44,7 @@
 }
 
 .contact-form button {
-	font-family: $header-font-family;
-	font-size: $h5-font-size;
-	padding: $spacing-s;
-	border-radius: 0.5rem;
 	float: right;
-}
-
-.contact-form button:hover {
-	background-color: darken($header-bg-color, 10%);
-	color: darken($header-text-color, 10%);
 }
 
 @media (min-width: $page-width) {

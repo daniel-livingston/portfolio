@@ -123,6 +123,7 @@ export default class ContactForm extends React.Component {
 		return (
 			<form className='contact-form contact-form-large' onSubmit={this.onSubmit}>
 				<div className='contact-form__row'>
+					<input type='text' autoFocus='autofocus' style={{ display: "none" }} />
 					<div className='contact-form__section'>
 						<label htmlFor='name'>
 							Name
@@ -192,7 +193,7 @@ export default class ContactForm extends React.Component {
 						onChange={this.onMessageChange}
 					/>
 				</div>
-				<button>Submit</button>
+				<button className='button'>Submit</button>
 				{this.state.sentSuccessfully && (
 					<div className='contact-form__success'>Your message was sent successfully!</div>
 				)}
