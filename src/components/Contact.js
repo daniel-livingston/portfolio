@@ -5,7 +5,7 @@ import useTitle from "../hooks/useTitle";
 const Contact = () => {
 	useTitle("Contact");
 	return (
-		<div id='content' className='container'>
+		<div className='feature container'>
 			<div className='wrapper'>
 				<h1>Contact</h1>
 				<ContactForm />
