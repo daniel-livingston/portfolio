@@ -24,14 +24,14 @@
 }
 
 .attribute__one {
-	color: $main-text-tertiary;
+	color: $main-text-fourth;
 	padding-left: $spacing-s;
-	border-left: 5px solid $main-text-tertiary;
+	border-left: 5px solid $main-text-fourth;
 }
 
 .attribute__two {
-	color: $main-text-fourth;
-	text-align: right;
+	color: $main-text-tertiary;
 	padding-right: $spacing-s;
-	border-right: 5px solid $main-text-fourth;
+	text-align: right;
+	border-right: 5px solid $main-text-tertiary;
 }
