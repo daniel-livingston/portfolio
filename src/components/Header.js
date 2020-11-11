@@ -24,10 +24,10 @@ const Header = (props) => {
 	return (
 		<header id='header' className='header'>
 			<div className='header__brand'>
-				<div className='header__brand__wrapper'>
+				<Link onClick={onLinkClick} className='header__brand__wrapper' to='/'>
 					<div className='header__brand__title'>Daniel Livingston</div>
 					<div className='header__brand__description'>Web Developer</div>
-				</div>
+				</Link>
 			</div>
 			<nav className='header__nav'>
 				<div className='header__navlinks'>
