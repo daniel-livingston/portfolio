@@ -28,7 +28,7 @@ const Projects = () => {
 					"The app also uses Socket.io to communicate within rooms.",
 					"This project was incredibly fun to work on. I know of other applications available that accomplish the same thing, but I just wanted to create my own take on it. This project exposed me to a lot of challenges that I had to overcome. For one, designing the Web Socket API in a way that made sense and was easy to understand was particularly difficuly. Also, I'm not strongly suited towards design, so styling the app and making sure it looked clean on all screen sizes was a challenge as well.",
 				]}
-				left
+				side='left'
 			/>
 		</div>
 	);

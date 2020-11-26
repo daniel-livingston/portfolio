@@ -1,5 +1,7 @@
 import React from "react";
+import Section from "./Section";
 import useTitle from "../hooks/useTitle";
+import { HOME_SECTIONS } from "../constants";
 
 const Home = () => {
 	useTitle("About");
@@ -14,75 +16,15 @@ const Home = () => {
 					</h2>
 				</div>
 			</div>
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__left'>Front End Development</h2>
-					<p className='feature__description'>
-						I have solid fundamentals, with in-depth knowledge of HTML5 and CSS3. I also
-						have knowledge of front end frameworks like React (this website is built
-						completely with React). I also have experience utilizing many of the
-						libraries that play well with React, like Redux, React-Router and Jest.
-					</p>
-				</div>
-			</div>
-
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__right'>Back End Development</h2>
-					<p className='feature__description'>
-						I have a solid knowledge of the fundamentals of back end development. I have
-						experience building out servers using Express, Passport, and MongoDB, as
-						well as designing and building HTTP-based APIs.
-					</p>
-				</div>
-			</div>
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__left'>Teachable and Inquisitive</h2>
-					<p className='feature__description'>
-						I have a thirst for knowledge. In the months since graduating with a
-						master's in computer science focusing on data science, I've used every
-						resource I can to teach myself web development. I'm still learning, and I
-						will probably never stop.
-					</p>
-				</div>
-			</div>
-
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__right'>
-						Communicative and Team-oriented
-					</h2>
-					<p className='feature__description'>
-						I highly value the ability to work well with other people. I have tons of
-						experience leading and being led, and I believe, in life, there is no
-						greater skill than being able to cooperate with others.
-					</p>
-				</div>
-			</div>
-
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__left'>Self-starter</h2>
-					<p className='feature__description'>
-						Proactivity is important in all facets of life. Often people will let
-						difficult situations stop them from progressing. I try my best to continue
-						pushing through that difficulty and succeed anyway.
-					</p>
-				</div>
-			</div>
-
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h2 className='feature__title feature__right'>Education</h2>
-					<p className='feature__description'>
-						I graduated from Florida Atlantic University in 2020 with a{" "}
-						<span className='text-accent'> master's in computer science</span>, and
-						before that with a{" "}
-						<span className='text-accent'> bachelor's in mathematics</span>.
-					</p>
-				</div>
-			</div>
+			{HOME_SECTIONS.map((section, index) => (
+				<Section
+					title={section.title}
+					side={index % 2 === 0 ? "left" : "right"}
+					key={section.title}
+				>
+					{section.description}
+				</Section>
+			))}
 		</div>
 	);
 };

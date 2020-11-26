@@ -1,0 +1,22 @@
+.ProjectImage-left,
+.ProjectImage-right {
+	width: 100%;
+	height: auto;
+	@include add-shadow;
+}
+
+@media (min-width: $page-width) {
+	.ProjectImage-left {
+		float: left;
+	}
+
+	.ProjectImage-right {
+		float: right;
+	}
+
+	.ProjectImage-left,
+	.ProjectImage-right {
+		width: 50%;
+		margin: 0 $spacing-m;
+	}
+}

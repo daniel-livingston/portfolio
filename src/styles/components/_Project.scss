@@ -1,0 +1,15 @@
+.read-more {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+	font-family: $header-font-family;
+	color: $main-text-secondary;
+	cursor: pointer;
+}
+
+.read-more__arrow {
+	fill: $main-text-secondary;
+	height: 16px;
+	width: auto;
+}
