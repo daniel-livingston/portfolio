@@ -1,4 +1,4 @@
-.footer {
+.Footer {
 	background: $footer-bg-color;
 	color: $footer-text-color;
 	font-family: $header-font-family;
@@ -6,43 +6,17 @@
 	margin-top: $spacing-m;
 }
 
-.footer__nav {
+@include set-max-width-responsive("Footer-nav");
+.Footer-nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
 }
 
-.footer__navlinks {
-	display: flex;
-	flex-direction: column;
-}
-
-.footer__navlink {
+.Footer-brand {
+	font-size: $h2-font-size;
 	text-decoration: none;
-	font-size: $h6-font-size;
 	color: $footer-text-color;
 	padding: $spacing-xs;
-}
-
-.footer__navlink__brand {
-	font-size: $h5-font-size;
-}
-
-.social-icons {
-	height: 16px;
-	width: auto;
-	filter: brightness(0);
-	margin: $spacing-xs;
-}
-
-@media (min-width: $page-width) {
-	.footer__nav {
-		width: $page-width;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	.social-icons {
-		height: 32px;
-	}
 }

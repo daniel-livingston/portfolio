@@ -1,0 +1,11 @@
+.FooterLinks {
+	display: flex;
+	flex-direction: column;
+}
+
+.FooterLinks-link {
+	text-decoration: none;
+	font-size: $h5-font-size;
+	color: $footer-text-color;
+	padding: $spacing-xs;
+}
