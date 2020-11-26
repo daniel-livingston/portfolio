@@ -1,6 +1,8 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
+import HeaderBrand from "./HeaderBrand";
+import HeaderLink from "./HeaderLink";
+import MenuButton from "./MenuButton";
 
 const propTypes = {
 	menuIsOpen: PropTypes.bool.isRequired,
@@ -22,46 +24,14 @@ const Header = (props) => {
 	};
 
 	return (
-		<header id='header' className='header'>
-			<div className='header__brand'>
-				<Link onClick={onLinkClick} className='header__brand__wrapper' to='/'>
-					<div className='header__brand__title'>Daniel Livingston</div>
-					<div className='header__brand__description'>Web Developer</div>
-				</Link>
-			</div>
-			<nav className='header__nav'>
-				<div className='header__navlinks'>
-					<NavLink
-						className='header__navlink'
-						to='/'
-						activeClassName='header__navlink__active'
-						exact
-					>
-						About
-					</NavLink>
-					<NavLink
-						className='header__navlink'
-						to='/projects'
-						activeClassName='header__navlink__active'
-					>
-						Projects
-					</NavLink>
-					<NavLink
-						className='header__navlink'
-						to='/contact'
-						activeClassName='header__navlink__active'
-					>
-						Contact
-					</NavLink>
-				</div>
+		<header id='Header' className='Header'>
+			<HeaderBrand onClick={onLinkClick} />
+			<nav className='Header-nav'>
+				<HeaderLink to='/'>About</HeaderLink>
+				<HeaderLink to='/projects'>Projects</HeaderLink>
+				<HeaderLink to='/contact'>Contact</HeaderLink>
 			</nav>
-			<button className='menu-button' onClick={onMenuClick}>
-				<svg className='menu-button__icon' viewBox='0 0 100 80' width='24' height='24'>
-					<rect width='100' height='20'></rect>
-					<rect y='30' width='100' height='20'></rect>
-					<rect y='60' width='100' height='20'></rect>
-				</svg>
-			</button>
+			<MenuButton onClick={onMenuClick} />
 		</header>
 	);
 };

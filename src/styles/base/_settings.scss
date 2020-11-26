@@ -1,9 +1,12 @@
-// Font styling
+/*******************************
+ * Font
+ *******************************/
 
 // Font family
 $Komika: "Komika", serif;
 $Montserrat: "Montserrat", Helvetica, Arial, sans-serif;
 $Staatliches: "Staatliches", Arial, sans-serif;
+
 $header-font-family: $Staatliches;
 $text-font-family: $Montserrat;
 
@@ -21,7 +24,9 @@ $text-font-size-s: 1.8rem;
 $header-font-weight: 300;
 $text-font-weight: 500;
 
-// Theming
+/*******************************
+ * Theming
+ *******************************/
 
 // Colors
 $main-text-color: #000;
@@ -29,21 +34,42 @@ $main-text-secondary: rgb(102, 183, 207);
 $main-text-tertiary: rgb(255, 215, 121);
 $main-text-fourth: rgb(255, 139, 121);
 $main-bg-color: white;
+
 $header-text-color: #eee;
 $header-bg-color: #000;
 $header-secondary-bg-color: rgb(64, 98, 161);
 $header-active-color: $main-text-secondary;
+
 $error-text-color: $main-text-fourth;
+
 $footer-bg-color: lighten($main-text-secondary, 30%);
 $footer-text-color: $main-text-color;
 $footer-text-secondary: $main-text-secondary;
+
 $button-color: $main-text-tertiary;
 $button-text-color: white;
 
-// Sizing
+/*******************************
+ * Sizing
+ *******************************/
 
 // Width
-$page-width: 768px;
+$page-width: 992px;
+@mixin set-max-width-responsive($class) {
+	.#{$class} {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@media (min-width: $page-width) {
+		.#{$class} {
+			width: $page-width;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
 
 // Spacing
 $spacing-xs: 0.5rem;
@@ -51,7 +77,10 @@ $spacing-s: 1rem;
 $spacing-m: 1.6rem;
 $spacing-l: 2.4rem;
 
-// Effects
+/*******************************
+ * Effects
+ *******************************/
+
 $grid-line: transparentize($main-text-color, 0.93);
 $grid-square-width: 40px;
 $grid-background-image: repeating-linear-gradient(

@@ -25,7 +25,7 @@ export default class App extends React.Component {
 	onWindowClick = (e) => {
 		if (
 			this.state.menuIsOpen &&
-			!document.getElementById("header").contains(e.target) &&
+			!document.getElementById("Header").contains(e.target) &&
 			document.getElementById("side-menu") &&
 			!document.getElementById("side-menu").contains(e.target)
 		) {

@@ -1,0 +1,18 @@
+.MenuButton {
+	background: none;
+	outline: none;
+	border: none;
+	position: absolute;
+	right: $spacing-s;
+	top: $spacing-s;
+}
+
+.menu-button__icon {
+	fill: $main-text-color;
+}
+
+@media (min-width: $page-width) {
+	.MenuButton {
+		display: none;
+	}
+}

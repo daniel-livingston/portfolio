@@ -1,15 +1,19 @@
 .button {
 	background-color: $button-color;
-	border: darken($button-color, 10%);
 	color: $button-text-color;
-	cursor: pointer;
+
+	border: darken($button-color, 10%);
+	border-radius: 0.5rem;
 	outline: none;
+
 	font-family: $header-font-family;
 	font-size: $h5-font-size;
-	padding: $spacing-s;
-	border-radius: 0.5rem;
 	text-decoration: none;
+
+	padding: $spacing-s;
 	margin-left: $spacing-s;
+
+	cursor: pointer;
 }
 
 .button:hover {

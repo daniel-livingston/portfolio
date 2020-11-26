@@ -1,0 +1,28 @@
+.HeaderBrand {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: $spacing-l;
+}
+
+.HeaderBrand-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: $main-text-color;
+}
+
+.HeaderBrand-title {
+	color: $main-text-color;
+	font-size: $h1-font-size !important;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: $h5-font-size;
+	padding: 0 $spacing-m;
+}
+
+.HeaderBrand-description {
+	font-size: $h5-font-size;
+}
