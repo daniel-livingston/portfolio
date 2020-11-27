@@ -1,5 +1,6 @@
 import React from "react";
 import useTitle from "../hooks/useTitle";
+import Container from "./Container";
 import Project from "./Project";
 
 const Projects = () => {
@@ -7,11 +8,9 @@ const Projects = () => {
 
 	return (
 		<div className='projects'>
-			<div className='feature container'>
-				<div className='wrapper'>
-					<h1>Projects</h1>
-				</div>
-			</div>
+			<Container>
+				<h1>Projects</h1>
+			</Container>
 
 			<Project
 				image={{ href: "/images/DnD.png", alt: "DnD application viewing the Canvas" }}

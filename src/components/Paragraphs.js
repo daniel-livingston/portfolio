@@ -8,7 +8,7 @@ const propTypes = {
 export const Paragraphs = (props) => (
 	<>
 		{props.content.map((paragraph) => (
-			<React.Fragment>
+			<React.Fragment key={paragraph.slice(0, 10)}>
 				<div>{paragraph}</div>
 				<br />
 			</React.Fragment>

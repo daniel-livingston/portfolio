@@ -1,37 +1,9 @@
-.home__main-attribute {
+.Home-header {
 	padding: $spacing-m 0;
-}
 
-.home__main-attribute__header {
-	text-align: center;
-	font-weight: $header-font-weight;
-	font-size: $h2-font-size;
-}
-
-.home__attribute {
-	padding: $spacing-s 0;
-}
-
-.home__attribute__title {
-	font-size: $h3-font-size;
-	font-weight: $header-font-weight;
-}
-
-.home__attribute__description {
-	font-weight: $text-font-weight;
-	font-size: $text-font-size-s;
-	line-height: $text-font-size-m;
-}
-
-.attribute__one {
-	color: $main-text-fourth;
-	padding-left: $spacing-s;
-	border-left: 5px solid $main-text-fourth;
-}
-
-.attribute__two {
-	color: $main-text-tertiary;
-	padding-right: $spacing-s;
-	text-align: right;
-	border-right: 5px solid $main-text-tertiary;
+	h2 {
+		text-align: center;
+		font-weight: $header-font-weight;
+		font-size: $h2-font-size;
+	}
 }
